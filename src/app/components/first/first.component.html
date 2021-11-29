@@ -1,0 +1,26 @@
+<p
+  [hidden]="isHidden"
+> {{name}}</p>
+
+<button
+  (click)="showHide()"
+>
+  {{ message }}
+</button>
+<input
+  #myInput
+  type="text" class="form-control">
+
+<button
+  (click)="changeInputContent(myInput.value)"
+  class="btn btn-primary">
+  show input content
+</button>
+Le contenu de mon input est {{ inputContent }}
+in app first: <app-second></app-second>
+
+<!--
+  Des attributs
+
+  Des events
+-->
