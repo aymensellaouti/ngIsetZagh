@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, DoCheck, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -10,7 +10,6 @@ export class CardComponent implements OnInit {
   firstname = 'aymen';
   path = 'rotating_card_profile.png';
   constructor() { }
-
   ngOnInit(): void {
   }
 
