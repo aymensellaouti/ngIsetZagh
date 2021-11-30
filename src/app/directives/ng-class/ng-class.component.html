@@ -1,0 +1,14 @@
+<div
+  [ngClass]="{
+    eteinte: !isAllume,
+    allume: isAllume
+  }"
+>
+  Lampe
+</div>
+
+
+<p  appHighlight>Bonjour le monde</p>
+<p [in]="'red'" [out]="'white'" appHighlight>Bonjour le monde</p>
+<p [in]="'black'" [out]="'white'" appHighlight>Bonjour le monde</p>
+<p [in]="'green'" [out]="'white'" appHighlight>Bonjour le monde</p>

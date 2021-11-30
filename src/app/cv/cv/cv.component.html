@@ -1,4 +1,4 @@
 <div class="row">
-  <div class="col"><app-list></app-list></div>
-  <div class="col"><app-details></app-details></div>
+  <div class="col"><app-list (forwardCv)="getCv($event)"></app-list></div>
+  <div class="col"><app-details [cv]="selectedCv"></app-details></div>
 </div>
