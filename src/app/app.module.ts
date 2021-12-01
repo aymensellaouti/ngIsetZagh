@@ -21,6 +21,7 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { MiniWordComponent } from './directives/mini-word/mini-word.component';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
+import {LoggerService} from "./services/logger.service";
 
 @NgModule({
   declarations: [
@@ -49,7 +50,9 @@ import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
     FormsModule,
 
   ],
-  providers: [],
+  providers: [
+    LoggerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
