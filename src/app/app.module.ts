@@ -26,6 +26,9 @@ import { TodoComponent } from './todo/todo/todo.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ToastrModule} from "ngx-toastr";
 import { EmbaucheComponent } from './cv/embauche/embauche.component';
+import { HeaderComponent } from './components/header/header.component';
+import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
+import { NF404Component } from './components/nf404/nf404.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,10 @@ import { EmbaucheComponent } from './cv/embauche/embauche.component';
     RainbowDirective,
     DefaultImagePipe,
     TodoComponent,
-    EmbaucheComponent
+    EmbaucheComponent,
+    HeaderComponent,
+    DetailCvComponent,
+    NF404Component
   ],
   imports: [
     BrowserModule,

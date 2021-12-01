@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">CvTech Iset Zaghouen</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link"
+           [routerLinkActiveOptions]="{exact: true}"
+           [routerLink]="['']" routerLinkActive="active text-primary">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['cv']"  routerLinkActive="active text-primary">Cv</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['todo']"  routerLinkActive="active text-primary">Todo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['color']"  routerLinkActive="active text-primary">Color</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['word']"  routerLinkActive="active text-primary">Word</a>
+      </li>
+    </ul>
+  </div>
+</nav>
