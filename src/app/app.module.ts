@@ -22,6 +22,7 @@ import { MiniWordComponent } from './directives/mini-word/mini-word.component';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
 import {LoggerService} from "./services/logger.service";
+import { TodoComponent } from './todo/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {LoggerService} from "./services/logger.service";
     HighlightDirective,
     MiniWordComponent,
     RainbowDirective,
-    DefaultImagePipe
+    DefaultImagePipe,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
