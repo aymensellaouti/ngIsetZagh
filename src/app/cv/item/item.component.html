@@ -5,6 +5,6 @@
     width="50px"
     height="50px"
     class="rounded-circle"
-    src="assets/images/{{cv?.path}}" alt="{{ cv?.name }}">
+    src="assets/images/{{cv?.path | defaultImage}}" alt="{{ cv?.name }}">
   {{cv?.firstname}} {{cv?.name}}
 </div>

@@ -13,6 +13,8 @@ export class ListComponent implements OnInit {
     this.cvs = [
       new Cv(1, 'sellaouti', 'aymen', 'teacher', 'rotating_card_profile3.png', '1234', 39),
       new Cv(2, 'sellaouti', 'aymen', 'teacher', 'rotating_card_profile2.png', '1234', 39),
+      new Cv(3, 'sellaouti', 'aymen', 'teacher', '                   ', '1234', 39),
+      new Cv(4, 'sellaouti', 'aymen', 'teacher', '', '1234', 39),
     ];
   }
 
