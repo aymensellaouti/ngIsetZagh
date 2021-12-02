@@ -35,6 +35,7 @@ import { TestObservableComponent } from './components/test-observable/test-obser
 import { SliderComponent } from './components/slider/slider.component';
 import { TestHttpComponent } from './components/test-http/test-http.component';
 import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTOR_PROVIDER} from "./auth/interceptors/auth.interceptor";
 
 @NgModule({
   declarations: [
@@ -76,7 +77,8 @@ import {HttpClientModule} from "@angular/common/http";
     HttpClientModule
   ],
   providers: [
-    LoggerService
+    LoggerService,
+    HTTP_INTERCEPTOR_PROVIDER
   ],
   bootstrap: [AppComponent]
 })

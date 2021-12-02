@@ -33,6 +33,7 @@
     </div>
   </div>
   <button
+    (click)="login(loginForm.value)"
     [disabled]="loginForm.invalid"
     type="submit" class="btn btn-primary">Submit</button>
 </form>
