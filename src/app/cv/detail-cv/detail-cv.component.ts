@@ -32,4 +32,8 @@ export class DetailCvComponent implements OnInit {
     }
   }
 
+  deleteCv() {
+    this.cvService.deleteCv(this.cv);
+    this.router.navigate(['cv']);
+  }
 }
