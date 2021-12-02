@@ -33,6 +33,8 @@ import { TestFormComponent } from './components/test-form/test-form.component';
 import { LoginComponent } from './components/login/login.component';
 import { TestObservableComponent } from './components/test-observable/test-observable.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { TestHttpComponent } from './components/test-http/test-http.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -62,7 +64,8 @@ import { SliderComponent } from './components/slider/slider.component';
     TestFormComponent,
     LoginComponent,
     TestObservableComponent,
-    SliderComponent
+    SliderComponent,
+    TestHttpComponent
   ],
   imports: [
     BrowserModule,
@@ -70,6 +73,7 @@ import { SliderComponent } from './components/slider/slider.component';
     FormsModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
+    HttpClientModule
   ],
   providers: [
     LoggerService
